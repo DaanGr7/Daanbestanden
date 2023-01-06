@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mijn titel</title>
+</head>
+
+<p id="testId" class="testClass">test</p>
+
+<p id="testId2" class="testClass">test</p>
+
+<p id="testId3" class="testClass">test</p>
+
+<img src="playmobil_sports.jpg" height=350 alt="Playmobile popptje die je niet kunt zien" title="Playmobilepoppetje"/>
+
+<br>
+<input id="invoer1" class="invoerveld" type="text">
+
+<input id="knop1" type="button" value="test" onclick="functie1()">
+<textarea cols="60">voetbalsite</textarea>
+<br>
+<br>
+
+<body> Dit is de beste site ooit</body>
+</body>
+</html>
+
+<style>
+html{background-color: darkgreen;
+color: gainsboro;}
+
+    p{
+        
+        color:aqua
+    }
+
+    #testId {
+        background-color: black;
+        border: 10px solid; border-color: aliceblue; 
+    }
+
+    .testClass{
+ background-color: black;
+ border: 10px solid; border-color: aliceblue; 
+
+    }
+
+    #testId2 {
+        border: 10px solid; border-color: aliceblue; 
+    }
+
+    input{
+        background-color:yellowgreen;
+    }
+
+</style>
+
+<script>
+
+    function functie1() { //eventListner
+        let naamVariabel = document.getElementById("invoer1").value;
+        alert(naamVariabel);
+        document.getElementById("testId2").innerHTML = "Hallo: " + naamVariabel;
+    }
+
+</script>
